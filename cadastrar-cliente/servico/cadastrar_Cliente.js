@@ -7,5 +7,5 @@ export async function cadastrarClientes(Nome, DataNascimento, Telefone, Sexo){
     const query = conexao.query("INSERT INTO listaclientes (Nome, DataNascimento, Telefone, Sexo) VALUES (?, ?, ?, ?)", [Nome, DataNascimento, Telefone, Sexo]);
 
     console.log(query);
-    conexao.Release();
+    conexao.release();
 }

@@ -1,4 +1,4 @@
-import pool from './servico/conexao.js';
+import pool from './conexao.js';
 
 
 export async function cadastrarClientes(Nome, DataNascimento, Telefone, Sexo){
